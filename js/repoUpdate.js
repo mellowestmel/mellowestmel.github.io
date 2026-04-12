@@ -33,7 +33,7 @@ async function loadRepoUpdate() {
   }
 
   const res = await fetch(
-    "https://api.github.com/repos/ShibaTheDeveloper/shibathedeveloper.github.io"
+    "https://api.github.com/repos/MellowestMel/mellowestmel.github.io"
   );
   const repo = await res.json();
   const pushedDate = new Date(repo.pushed_at);
