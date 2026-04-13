@@ -25,6 +25,21 @@ body {
 /* ----------------------------
    Container (glass effect)
 ---------------------------- */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+
+    object-fit: cover;
+
+    z-index: -1;
+    pointer-events: none;
+}
+
 .container {
     width: 60%;
     max-width: 800px;
@@ -379,6 +394,13 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
    Portrait Mode UI
 ---------------------------- */
 @media screen and (max-width: 680px) {
+    .background-video {
+        width: 100vw;
+        height: 100dvh;
+        min-height: -webkit-fill-available;
+        object-fit: cover;
+    }
+
     body {
         flex-direction: column;
         align-items: stretch;
