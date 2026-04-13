@@ -23,25 +23,12 @@ body {
 }
 
 /* ----------------------------
-   Canvas
----------------------------- */
-.shootingStarsCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    color: rgba(255, 255, 255, 1);
-    z-index: -2;
-}
-
-/* ----------------------------
    Container (glass effect)
 ---------------------------- */
 .container {
     width: 60%;
     max-width: 800px;
-    height: calc(100% - 20px);
+    height: calc(100% - 60px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -70,7 +57,7 @@ h1, h2, p, input {
     box-sizing: border-box;
     border-radius: 8px;
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.45);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
@@ -88,6 +75,7 @@ h2 {
 }
 
 p {
+    background-color: rgba(0, 0, 0, 0.1);
     color: rgb(232, 232, 232);
     padding: 10px 20px;
     font-size: 1rem;
@@ -106,7 +94,7 @@ input {
    Lists (glass surfaces)
 ---------------------------- */
 ul, ol {
-    background-color: rgba(17, 17, 17, 0.5);
+    background-color: rgba(17, 17, 17, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 
@@ -180,6 +168,7 @@ a:active {
 }
 
 .easter-egg-hyperlink:hover {
+    color: rgb(232, 232, 232);
     transform: scale(1.02);
 }
 
