@@ -320,6 +320,7 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
 }
 
 .project-tags {
+    color: rgb(232, 232, 232);
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
