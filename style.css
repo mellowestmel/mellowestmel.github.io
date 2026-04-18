@@ -22,21 +22,40 @@ body {
     overflow: hidden;
 }
 
+body > img {
+    justify-self: center;
+    align-self: center;
+    margin-top: 5vh;
+    height: auto;
+    width: auto;
+    max-width: calc(100% - 40px);
+    max-height: 80vh;
+}
+
 /* ----------------------------
-   Container (glass effect)
+   Canvas
+---------------------------- */
+.shootingStarsCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    color: rgba(255, 255, 255, 1);
+    z-index: -2;
+}
+
+/* ----------------------------
+   Container
 ---------------------------- */
 .container {
     width: 60%;
     max-width: 800px;
-    height: calc(100% - 60px);
+    height: calc(100% - 20px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    background-color: rgba(24, 24, 24, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
+    background-color: rgb(24, 24, 24);
     padding: 20px;
     z-index: 1;
     position: absolute;
@@ -46,7 +65,7 @@ body {
 }
 
 /* ----------------------------
-   Typography (glass surfaces)
+   Typography
 ---------------------------- */
 h1, h2, p, input {
     border: none;
@@ -56,26 +75,24 @@ h1, h2, p, input {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     border-radius: 8px;
-
-    background-color: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
 }
 
 h1 {
+    background-color: rgb(6, 6, 6);
     color: rgb(232, 232, 232);
     padding: 10px 20px;
     font-size: 2rem;
 }
 
 h2 {
+    background-color: rgb(6, 6, 6);
     color: rgb(232, 232, 232);
     padding: 10px 20px;
     font-size: 1rem;
 }
 
 p {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(17, 17, 17);
     color: rgb(232, 232, 232);
     padding: 10px 20px;
     font-size: 1rem;
@@ -85,19 +102,17 @@ p {
 }
 
 input {
+     background-color: rgb(6, 6, 6);
     color: rgb(232, 232, 232);
     padding: 10px 20px;
     font-size: 1rem;
 }
 
 /* ----------------------------
-   Lists (glass surfaces)
+   Lists
 ---------------------------- */
 ul, ol {
-    background-color: rgba(17, 17, 17, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-
+    background-color: rgb(17, 17, 17);
     color: rgb(232, 232, 232);
     padding: 10px 20px;
     margin: 10px auto;
@@ -123,10 +138,7 @@ button, a, .button-container button {
 }
 
 button {
-    background-color: rgba(40, 40, 40, 0.5);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-
+    background-color: rgb(6, 6, 6);
     color: rgb(232, 232, 232);
     border: none;
     padding: 10px 20px;
@@ -136,7 +148,7 @@ button {
 }
 
 button:hover, #selected {
-    background-color: rgba(6, 6, 6, 0.5);
+    background-color: rgb(40, 40, 40);
     transform: scale(1.05);
 }
 
@@ -169,23 +181,35 @@ a:active {
 
 .easter-egg-hyperlink:hover {
     color: rgb(232, 232, 232);
+    text-decoration: none;
     transform: scale(1.02);
 }
 
-/* ----------------------------
-   Cursor rules
----------------------------- */
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+strong em {
+    font-weight: 700;
+    font-style: italic;
+}
+
 button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-container button:hover {
-    cursor: pointer;
+    cursor: pointer
 }
 
 #selected {
     cursor: not-allowed;
 }
 
-/* -----------------------------
+/*-----------------------------
    Easter Eggs
 ---------------------------- */
+
 #java-easter-egg-notification {
     position: fixed;
     bottom: 20px;
@@ -195,10 +219,7 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
     border-radius: 6px;
     transition: right 0.2s ease-out;
     z-index: 999999999;
-
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: transparent;
     overflow: hidden;
 }
 
@@ -224,10 +245,7 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
    Button Containers
 ---------------------------- */
 .button-container {
-    background-color: rgba(6, 6, 6, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-
+    background-color: rgb(6, 6, 6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,11 +276,7 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
 .project-card {
     display: flex;
     width: calc(100% - 40px);
-
-    background-color: rgba(6, 6, 6, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
+    background-color: rgb(6, 6, 6);
     border-radius: 8px;
     transition: transform 0.2s ease;
     text-decoration: none;
@@ -271,6 +285,12 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
 
 .project-card:hover {
     transform: scale(1.02);
+    text-decoration: none;
+}
+
+.project-tag,
+.project-card:hover .project-tag {
+    color: rgb(232, 232, 232);
 }
 
 .project-image {
@@ -320,17 +340,13 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
 }
 
 .project-tags {
-    color: rgb(232, 232, 232);
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
 
 .project-tag {
-    background-color: rgba(17,17,17,0.5);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-
+    background-color: rgb(17,17,17);
     padding: 2px 6px;
     border-radius: 5px;
     font-size: 0.7rem;
@@ -341,10 +357,7 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
    Daily Song
 ---------------------------- */
 #daily-song {
-    background-color: rgba(17, 17, 17, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
+    background-color: rgb(17, 17, 17);
     padding: 10px 20px;
     margin: 10px auto;
     width: calc(100% - 40px);
@@ -379,13 +392,6 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
    Portrait Mode UI
 ---------------------------- */
 @media screen and (max-width: 680px) {
-    .background-video {
-        width: 100vw;
-        height: 100dvh;
-        min-height: -webkit-fill-available;
-        object-fit: cover;
-    }
-
     body {
         flex-direction: column;
         align-items: stretch;
@@ -486,6 +492,7 @@ button:hover, a:hover, .project-card:hover .easter-egg-hyperlink:hover .button-c
 /* ----------------------------
    Misc
 ---------------------------- */
+
 br {
     margin: 0.5vh;
 }
