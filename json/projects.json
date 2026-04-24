@@ -7,10 +7,7 @@
 
         "project-created": "December 13, 2025",
 
-        "project-tags": {
-            "1": "Love2D",
-            "2": "Lua"
-        }
+        "project-tags": ["Love2D", "Lua"]
     },
 
     "2": {
@@ -21,10 +18,7 @@
 
         "project-created": "June 18, 2023",
 
-        "project-tags": {
-            "1": "Roblox",
-            "2": "LuaU"
-        }
+        "project-tags": ["Roblox", "LuaU"]
     },
 
     "3": {
@@ -35,10 +29,7 @@
 
         "project-created": "December 29, 2023",
 
-        "project-tags": {
-            "1": "Roblox",
-            "2": "LuaU"
-        }
+        "project-tags": ["Roblox", "LuaU"]
     },
 
     "4": {
@@ -49,10 +40,17 @@
 
         "project-created": "February 11, 2025",
 
-        "project-tags": {
-            "1": "HTML",
-            "2": "CSS",
-            "3": "JavaScript"
-        }
+        "project-tags": ["HTML", "JavaScript", "Website"]
+    },
+
+    "5": {
+        "project-title": "FastSignal",
+        "project-description": "A Lightweight signal system for Roblox Luau.",
+        "project-image": "/assets/project-icons/luau.webp",
+        "project-link": "https://github.com/mellowestmel/FastSignal",
+
+        "project-created": "April 24, 2026",
+
+        "project-tags": ["LuaU", "Library"]
     }
 }
