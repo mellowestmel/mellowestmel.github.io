@@ -41,16 +41,5 @@
         "project-created": "February 11, 2025",
 
         "project-tags": ["HTML", "JavaScript", "Website"]
-    },
-
-    "5": {
-        "project-title": "FastSignal",
-        "project-description": "A Lightweight signal system for Roblox Luau.",
-        "project-image": "/assets/project-icons/luau.webp",
-        "project-link": "https://github.com/mellowestmel/FastSignal",
-
-        "project-created": "April 24, 2026",
-
-        "project-tags": ["LuaU", "Library"]
     }
 }
