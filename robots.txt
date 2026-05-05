@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /pages/socials.html
-Disallow: /pages/choccy.html
-Disallow: /pages/sigma.html
-Disallow: /pages/side-note.html
-Disallow: /pages/accurate.html
-Disallow: /pages/404.html
-Disallow: /assets/easter-egg/
-Disallow: /assets/fonts/
