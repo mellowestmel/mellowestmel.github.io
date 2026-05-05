@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0b0b0b;
+}
+
+#desktop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.titlebar {
+  width: 100%;
+  height: 10%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 10px;
+  box-sizing: border-box;
+
+  cursor: grab;
+  user-select: none;
+}
+
+.content {
+  width: 100%;
+  height: 90%;
+
+  overflow: hidden;
+}
+
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
