@@ -96,16 +96,6 @@ input {
     font-size: 1rem;
 }
 
-.donation {
-    flex: 0 0 auto;
-
-    background-color: rgb(24, 24, 24);
-    border-radius: 8px;
-    padding: 16px;
-
-    box-sizing: border-box;
-}
-
 .xmr-wallet {
     display: block;
 
@@ -114,7 +104,6 @@ input {
     padding: 10px 20px;
     margin: 10px auto;
 
-    width: calc(100% - 40px);
     box-sizing: border-box;
 
     border-radius: 8px;
