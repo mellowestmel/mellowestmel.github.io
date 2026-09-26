@@ -1,5 +1,6 @@
 import "./core/router.js";
 
+import "./components/clickableUrl.js";
 import "./components/lastModified.js";
 import "./components/projects.js";
 import "./components/buttons.js";
