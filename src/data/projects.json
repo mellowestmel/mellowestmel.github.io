@@ -14,9 +14,9 @@
 
     {
         "title": "TBB:TARPG",
-        "description": "My most popular game (1M+ visits across all of its places and peak 183 active players at once.), it is roleplay game based off <a href=\"https://www.roblox.com/communities/9835935/Tumore#!/about\">Tumore</a>'s game named <a href=\"https://www.roblox.com/games/10834586502/The-Battle-Bricks\">The Battle Bricks</a>. I made the game private since I no longer wish to associate myself with them, their games, or their community. If you think this game doesn't exist, click <a data-page=\"tarpg-proof\">here</a> for proof",
+        "description": "My most popular game (1M+ visits across all of its places and peak 183 active players at once.), it is roleplay game based off <a href=\"https://www.roblox.com/communities/9835935/Tumore#!/about\">Tumore</a>'s game named <a href=\"https://www.roblox.com/games/10834586502/The-Battle-Bricks\">The Battle Bricks</a>. I made the game private since I no longer wish to associate myself with them, their games, or their community. Clicking this button will lead you to a page with proof of the games existence.",
         "image": "/src/img/projects/tarpg.webp",
-        "link": "https://www.roblox.com/games/15148994711/i-dont-wanna-be-affiliated-with-tumore-anymore",
+        "link": "?page=tarpg-proof",
         "created": "2023-06-18",
         "status": "Discontinued",
         "tags": [
