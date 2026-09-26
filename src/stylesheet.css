@@ -13,11 +13,6 @@ body {
     padding: 10px 0;
 }
 
-body > *:not(#shootingStarsCanvas) {
-    position: relative;
-    z-index: 1;
-}
-
 .main-card {
     width: 60%;
     max-width: 800px;
@@ -32,9 +27,7 @@ body > *:not(#shootingStarsCanvas) {
     padding: 20px;
 
     box-sizing: border-box;
-    border-radius: 8px;
-
-    animation: pageIn 500ms ease-out;
+    border-radius: 6px;
 
     position: relative;
     z-index: 1;
@@ -58,18 +51,18 @@ header {
 header,
 #app {
     background-color: rgb(24, 24, 24);
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 16px;
 }
 
-h1, h2, p, input {
+h1, h2, p, input, code {
     border: none;
     display: block;
     width: calc(100% - 40px);
     margin: 10px auto;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 h1 {
@@ -84,7 +77,7 @@ h2 {
     font-size: 1rem;
 }
 
-p {
+p, code {
     background-color: rgb(17, 17, 17);
     padding: 10px 20px;
 }
@@ -96,7 +89,7 @@ input {
     font-size: 1rem;
 }
 
-.xmr-wallet {
+code {
     display: block;
 
     color: rgb(232, 232, 232);
@@ -105,8 +98,7 @@ input {
     margin: 10px auto;
 
     box-sizing: border-box;
-
-    border-radius: 8px;
+    border-radius: 6px;
 
     font-family: monospace;
     font-size: 0.8rem;
@@ -128,7 +120,7 @@ ul, ol {
     width: calc(100% - 40px);
 
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 6px;
 
     list-style-position: inside;
 }
@@ -141,8 +133,7 @@ video {
     height: auto;
 
     margin: 10px auto;
-
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .navigation-buttons {
@@ -154,7 +145,7 @@ video {
     width: calc(100% - 40px);
     margin: 5px auto;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 6px;
 
     padding: 10px;
 
@@ -168,7 +159,7 @@ button {
     color: rgb(232, 232, 232);
     border: none;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
@@ -177,8 +168,9 @@ button:hover, .navigation-buttons button:disabled {
     transform: scale(1.05);
 }
 
-button:active:not(:disabled) {
-    transform: scale(0.95);
+button:active:not(:disabled),
+a:active {
+    transition: transform 80ms ease-out;
 }
 
 a {
@@ -196,24 +188,14 @@ a:active {
     transform: scale(0.95);
 }
 
-* {
-    transition: transform 300ms ease;
-    box-sizing: border-box;
+button,
+a,
+.project-card {
+    transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 br {
     margin: 0.5vh;
-}
-
-@keyframes pageIn {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 @font-face {
@@ -256,8 +238,7 @@ br {
     display: flex;
     width: calc(100% - 40px);
     background-color: rgb(6, 6, 6);
-    border-radius: 8px;
-    transition: transform 0.2s ease;
+    border-radius: 6px;
     text-decoration: none;
     color: inherit;
 }
@@ -278,7 +259,7 @@ br {
     object-fit: cover;
     margin: auto;
     flex-shrink: 0;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .project-text {
@@ -358,7 +339,6 @@ br {
         width: 100%;
         min-height: 100dvh;
         padding: 10px;
-        border-radius: 0;
     }
 
     header,
@@ -403,7 +383,6 @@ br {
     .project-image {
         width: 100%;
         height: auto;
-        border-radius: 0;
     }
 
     .project-text {
@@ -420,3 +399,36 @@ br {
         padding: 8px;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .main-card {
+        animation: none;
+    }
+
+    .page-spring-in > * {
+        animation: none;
+    }
+
+    button,
+    a,
+    .project-card {
+        transition: none;
+    }
+}
+
+@keyframes page-spring-in {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.page-spring-in > * {
+    animation: page-spring-in 480ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[hidden] { display: none !important; }
