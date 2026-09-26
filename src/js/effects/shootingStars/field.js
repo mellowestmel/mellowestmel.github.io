@@ -24,9 +24,6 @@ export class StarField {
     }
 
     renderAll(context) {
-        context.strokeStyle = "#fff";
-        context.lineWidth = 2;
-
         for (let index = 0; index < this.stars.length; index++) {
             renderStar(context, this.stars[index]);
         }

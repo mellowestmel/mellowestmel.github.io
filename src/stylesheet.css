@@ -2,10 +2,13 @@
     --accent: rgb(228, 231, 140);
 }
 
-html, body {
+html,
+body {
     margin: 0;
     min-height: 100%;
+
     font-family: 'Lato', Arial, sans-serif;
+
     background-color: rgb(0, 0, 0);
     color: #ffffff;
 }
@@ -14,7 +17,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
     padding: 10px 0;
+
+    position: relative;
+    isolation: isolate;
+}
+
+/*
+#background {
+    position: fixed;
+    inset: -8%;
+
+    background-image: url("/src/img/background.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    transform-origin: center center;
+
+    z-index: 0;
+    pointer-events: none;
+}
+*/
+
+#shootingStarsCanvas {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    pointer-events: none;
+
+    z-index: 1;
 }
 
 .main-card {
@@ -27,16 +64,17 @@ body {
     gap: 10px;
 
     background: transparent;
-    padding: 20px;
 
+    padding: 20px;
     box-sizing: border-box;
 
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 header {
     flex: 0 0 auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,8 +100,11 @@ p,
 input,
 code {
     border: none;
+
     display: block;
+
     width: calc(100% - 40px);
+
     margin: 10px auto;
 
     font-family: 'Lato', sans-serif;
@@ -75,20 +116,27 @@ code {
 
 h1 {
     background-color: rgb(6, 6, 6);
+
     padding: 10px 20px;
+
     font-size: 2rem;
+
     color: rgb(232, 232, 232);
 }
 
 h2 {
     background-color: rgb(6, 6, 6);
+
     padding: 10px 20px;
+
     font-size: 1rem;
+
     color: rgb(232, 232, 232);
 }
 
 p {
     background-color: rgb(17, 17, 17);
+
     padding: 10px 20px;
 }
 
@@ -97,6 +145,7 @@ input {
     color: rgb(232, 232, 232);
 
     padding: 10px 20px;
+
     font-size: 1rem;
 
     outline: 2px solid transparent;
@@ -114,6 +163,7 @@ code {
     color: rgb(232, 232, 232);
 
     padding: 10px 20px;
+
     margin: 10px auto;
 
     font-family: monospace;
@@ -134,6 +184,7 @@ ol {
     background-color: rgb(17, 17, 17);
 
     padding: 10px 20px;
+
     margin: 10px auto;
 
     width: calc(100% - 40px);
@@ -146,6 +197,7 @@ ol {
 img,
 video {
     display: block;
+
     max-width: calc(100% - 40px);
 
     height: auto;
@@ -158,9 +210,11 @@ video {
 
     display: flex;
     flex-wrap: nowrap;
+
     gap: 10px;
 
     width: calc(100% - 40px);
+
     margin: 5px auto;
 
     box-sizing: border-box;
@@ -205,6 +259,7 @@ button:active:not(:disabled) {
 
 a {
     color: var(--accent);
+
     text-decoration: none;
 }
 
@@ -224,28 +279,36 @@ br {
 
 @font-face {
     font-family: 'Lato';
+
     src: url('/src/fonts/Lato-Regular.ttf') format('truetype');
+
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
+
     src: url('/src/fonts/Lato-Bold.ttf') format('truetype');
+
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
+
     src: url('/src/fonts/Lato-Italic.ttf') format('truetype');
+
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Lato';
+
     src: url('/src/fonts/Lato-BoldItalic.ttf') format('truetype');
+
     font-weight: 700;
     font-style: italic;
 }
@@ -253,6 +316,7 @@ br {
 .projects-container {
     display: flex;
     flex-direction: column;
+
     gap: 15px;
 
     padding: 10px 0;
@@ -278,6 +342,7 @@ br {
 
 .project-card:hover {
     text-decoration: none;
+
     outline-color: var(--accent);
 }
 
@@ -340,6 +405,7 @@ br {
     margin-top: auto;
 
     gap: 10px;
+
     flex-wrap: wrap;
 }
 
@@ -353,7 +419,9 @@ br {
 
 .project-tags {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 5px;
 }
 
@@ -377,7 +445,7 @@ br {
 
     pointer-events: none;
 
-    z-index: -1;
+    z-index: 1;
 
     display: block;
     flex: none;
@@ -391,6 +459,7 @@ br {
     .main-card {
         width: 100%;
         min-height: 100dvh;
+
         padding: 10px;
     }
 
@@ -413,11 +482,13 @@ br {
 
     h1 {
         font-size: 1.5rem;
+
         padding: 10px 15px;
     }
 
     h2 {
         font-size: 0.95rem;
+
         padding: 10px 15px;
     }
 
@@ -430,6 +501,7 @@ br {
 
     .project-card {
         flex-direction: column;
+
         overflow: hidden;
     }
 
@@ -444,7 +516,9 @@ br {
 
     button {
         font-size: 0.95rem;
+
         padding: 10px 14px;
+
         white-space: nowrap;
     }
 

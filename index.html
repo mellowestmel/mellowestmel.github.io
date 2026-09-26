@@ -23,24 +23,23 @@
   </head>
 
   <body>
+      <canvas id="shootingStarsCanvas"></canvas>
+
       <div class="main-card">
-        <canvas id="shootingStarsCanvas"></canvas>
+          <header>
+              <img class="logo" src="/src/img/logo.webp" alt="mellowestmel.com logo">
 
-        <header>
-          <img class="logo" src="/src/img/logo.webp" alt="mellowestmel.com logo"></img>
+              <h2>Last modified: <span id="lastModified">Loading...</span></h2>
 
-          <h2>Last modified: <span id="lastModified">Loading...</span></h2>
+              <nav class="navigation-buttons">
+                  <button data-page="home">Home</button>
+                  <button data-page="interests">Interests</button>
+                  <button data-page="links">Links</button>
+                  <button data-page="coding-experience">Coding Experience</button>
+              </nav>
+          </header>
 
-          <nav class="navigation-buttons">
-            <button data-page="home">Home</button>
-            <button data-page="interests">Interests</button>
-            <button data-page="links">Links</button>
-            <button data-page="coding-experience">Coding Experience</button>
-          </nav>
-
-        </header>
-
-        <main id="app"></main>
+          <main id="app"></main>
       </div>
 
       <script type="module" src="/src/js/setup.js"></script>
