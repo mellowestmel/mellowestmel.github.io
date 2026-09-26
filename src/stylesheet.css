@@ -1,3 +1,7 @@
+:root {
+    --accent: rgb(228, 231, 140);
+}
+
 html, body {
     margin: 0;
     min-height: 100%;
@@ -20,14 +24,12 @@ body {
 
     display: flex;
     flex-direction: column;
-
     gap: 10px;
 
     background: transparent;
     padding: 20px;
 
     box-sizing: border-box;
-    border-radius: 6px;
 
     position: relative;
     z-index: 1;
@@ -51,33 +53,41 @@ header {
 header,
 #app {
     background-color: rgb(24, 24, 24);
-    border-radius: 6px;
     padding: 16px;
 }
 
-h1, h2, p, input, code {
+h1,
+h2,
+p,
+input,
+code {
     border: none;
     display: block;
     width: calc(100% - 40px);
     margin: 10px auto;
+
     font-family: 'Lato', sans-serif;
+
     box-sizing: border-box;
-    border-radius: 6px;
+
+    position: relative;
 }
 
 h1 {
     background-color: rgb(6, 6, 6);
     padding: 10px 20px;
     font-size: 2rem;
+    color: rgb(232, 232, 232);
 }
 
 h2 {
     background-color: rgb(6, 6, 6);
     padding: 10px 20px;
     font-size: 1rem;
+    color: rgb(232, 232, 232);
 }
 
-p, code {
+p {
     background-color: rgb(17, 17, 17);
     padding: 10px 20px;
 }
@@ -85,20 +95,26 @@ p, code {
 input {
     background-color: rgb(6, 6, 6);
     color: rgb(232, 232, 232);
+
     padding: 10px 20px;
     font-size: 1rem;
+
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+input:hover,
+input:focus {
+    outline-color: var(--accent);
 }
 
 code {
-    display: block;
+    background-color: rgb(17, 17, 17);
 
     color: rgb(232, 232, 232);
 
     padding: 10px 20px;
     margin: 10px auto;
-
-    box-sizing: border-box;
-    border-radius: 6px;
 
     font-family: monospace;
     font-size: 0.8rem;
@@ -113,14 +129,16 @@ li {
     margin-bottom: 0.5vh;
 }
 
-ul, ol {
+ul,
+ol {
     background-color: rgb(17, 17, 17);
+
     padding: 10px 20px;
     margin: 10px auto;
+
     width: calc(100% - 40px);
 
     box-sizing: border-box;
-    border-radius: 6px;
 
     list-style-position: inside;
 }
@@ -133,19 +151,19 @@ video {
     height: auto;
 
     margin: 10px auto;
-    border-radius: 6px;
 }
 
 .navigation-buttons {
     background-color: rgb(6, 6, 6);
+
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
 
     width: calc(100% - 40px);
     margin: 5px auto;
+
     box-sizing: border-box;
-    border-radius: 6px;
 
     padding: 10px;
 
@@ -155,43 +173,49 @@ video {
 
 button {
     width: 100%;
+
     background-color: rgb(6, 6, 6);
     color: rgb(232, 232, 232);
-    border: none;
+
+    border: 1px solid transparent;
+
     padding: 10px 20px;
-    border-radius: 6px;
+
     cursor: pointer;
 }
 
-button:hover, .navigation-buttons button:disabled {
+button:hover,
+.navigation-buttons button:disabled {
     background-color: rgb(40, 40, 40);
+    color: var(--accent);
+
+    border-color: var(--accent);
+
     transform: scale(1.05);
 }
 
-button:active:not(:disabled),
-a:active {
-    transition: transform 80ms ease-out;
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+button:active:not(:disabled) {
+    transform: scale(0.95);
 }
 
 a {
-    display: inline-block;
-    color: rgb(0, 140, 255);
+    color: var(--accent);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(0, 120, 218);
-    transform: scale(1.05);
+    color: var(--accent);
+    text-decoration: underline;
 }
 
-a:active {
-    transform: scale(0.95);
-}
-
-button,
-a,
-.project-card {
-    transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
 
 br {
@@ -230,22 +254,36 @@ br {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
     padding: 10px 0;
+
     align-items: center;
 }
 
 .project-card {
     display: flex;
+
     width: calc(100% - 40px);
+
     background-color: rgb(6, 6, 6);
-    border-radius: 6px;
+
+    border: 1px solid transparent;
+
     text-decoration: none;
     color: inherit;
+
+    outline: 2px solid transparent;
+    outline-offset: 2px;
 }
 
 .project-card:hover {
-    transform: scale(1.02);
     text-decoration: none;
+    outline-color: var(--accent);
+}
+
+.project-card:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
 
 .project-tag,
@@ -256,46 +294,60 @@ br {
 .project-image {
     width: 150px;
     height: 150px;
+
     object-fit: cover;
+
     margin: auto;
+
     flex-shrink: 0;
-    border-radius: 6px;
 }
 
 .project-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
     flex: 1;
+
     padding: 10px 20px;
+
     text-align: left;
 }
 
 .project-title {
     font-weight: bold;
     font-size: 1.2rem;
+
     margin-bottom: 5px;
+
     color: rgb(232, 232, 232);
 }
 
 .project-description {
     margin-bottom: 5px;
+
     font-size: 1rem;
+
     word-wrap: break-word;
+
     color: rgb(232, 232, 232);
 }
 
 .project-meta {
     display: flex;
     align-items: center;
+
     margin-top: auto;
+
     gap: 10px;
     flex-wrap: wrap;
 }
 
 .project-date {
     font-size: 0.75rem;
-    color: rgb(170,170,170);
+
+    color: rgb(170, 170, 170);
+
     white-space: nowrap;
 }
 
@@ -306,9 +358,10 @@ br {
 }
 
 .project-tag {
-    background-color: rgb(17,17,17);
+    background-color: rgb(17, 17, 17);
+
     padding: 2px 6px;
-    border-radius: 5px;
+
     font-size: 0.7rem;
     line-height: 1.2;
 }
@@ -401,14 +454,6 @@ br {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .main-card {
-        animation: none;
-    }
-
-    .page-spring-in > * {
-        animation: none;
-    }
-
     button,
     a,
     .project-card {
@@ -416,19 +461,6 @@ br {
     }
 }
 
-@keyframes page-spring-in {
-    from {
-        opacity: 0;
-        transform: translateY(16px) scale(0.98);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+[hidden] {
+    display: none !important;
 }
-
-.page-spring-in > * {
-    animation: page-spring-in 480ms cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-[hidden] { display: none !important; }
