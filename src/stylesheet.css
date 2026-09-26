@@ -179,6 +179,10 @@ li {
     margin-bottom: 0.5vh;
 }
 
+li::marker {
+    content: "★  ";
+}
+
 ul,
 ol {
     background-color: rgb(17, 17, 17);
