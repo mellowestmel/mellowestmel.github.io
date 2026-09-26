@@ -552,8 +552,11 @@ br {
         padding: 8px;
     }
 }
-
 @media (prefers-reduced-motion: reduce) {
+    #shootingStarsCanvas {
+        display: none;
+    }
+
     button,
     a,
     .project-card {
