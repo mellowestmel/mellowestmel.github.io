@@ -18,15 +18,9 @@ async function loadProjects() {
         }
 
         const projects = await response.json();
-
-        const sortedProjects = [...projects].sort(
-            (firstProject, secondProject) =>
-                secondProject.created.localeCompare(firstProject.created)
-        );
-
         const fragment = document.createDocumentFragment();
 
-        for (const project of sortedProjects) {
+        for (const project of projects) {
             const projectTags = (project.tags ?? []).map(tag =>
                 createElement("span", {
                     class: "project-tag",

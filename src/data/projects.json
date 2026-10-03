@@ -1,18 +1,5 @@
 [
     {
-        "title": "Merge Boxes! 2D",
-        "description": "A re-creation of my old Roblox game \"<a href=\"https://www.roblox.com/games/15795590655/Merge-Boxes\">Merge Boxes!</a>\". It is now an incremental game rather than just a merge game, and it is also made in Love2D! The game is not finished yet, but I'd say it's pretty close!",
-        "image": "/src/img/projects/mb2d.webp",
-        "link": "https://github.com/MellowestMel/Merge-Boxes-2D",
-        "created": "2025-12-13",
-        "status": "Indev",
-        "tags": [
-            "Love2D",
-            "Lua"
-        ]
-    },
-
-    {
         "title": "TBB:TARPG",
         "description": "My most popular game, with over 1M visits across all its places and a peak of 183 concurrent players. TBB:TARPG is a roleplay game inspired by Tumore's <a href=\"https://www.roblox.com/games/10834586502/The-Battle-Bricks\">The Battle Bricks</a>. The game went through four different versions throughout its lifetime, each introducing various changes and improvements. It is currently private, as I no longer wish to associate myself with Tumore, their games, or their community. Clicking this project will take you to a page containing documentation and proof of the game's existence.",
         "image": "/src/img/projects/tarpg.webp",
@@ -22,6 +9,19 @@
         "tags": [
             "Roblox",
             "Luau"
+        ]
+    },
+
+    {
+        "title": "Merge Boxes! 2D",
+        "description": "A re-creation of my old Roblox game \"<a href=\"https://www.roblox.com/games/15795590655/Merge-Boxes\">Merge Boxes!</a>\". It is now an incremental game rather than just a merge game, and it is also made in Love2D! The game is not finished yet, but I'd say it's pretty close!",
+        "image": "/src/img/projects/mb2d.webp",
+        "link": "https://github.com/MellowestMel/Merge-Boxes-2D",
+        "created": "2025-12-13",
+        "status": "Indev",
+        "tags": [
+            "Love2D",
+            "Lua"
         ]
     },
 
@@ -39,18 +39,31 @@
     },
 
     {
-        "title": "mellowestmel.com",
-        "description": "A place to check out my projects, socials, and whatever I'm working on.",
-        "image": "/src/img/web/embed.webp",
-        "link": "https://github.com/MellowestMel/mellowestmel.github.io",
-        "created": "2025-02-11",
+        "title": "Gearbearers",
+        "description": "My newest project and a successor to <a href=\"https://www.roblox.com/games/15506551128/Class-Warfare\">Class Warfare</a>. It is currently private and I do not wish to reveal too much about it yet.",
+        "image": "/src/img/projects/gbs.webp",
+        "link": "https://www.roblox.com/games/140224794047871/Gearbearers",
+        "created": "2026-04-30",
+        "status": "On Hold",
         "tags": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Website"
+            "Roblox",
+            "Luau"
         ]
     },
+
+    {
+        "title": "Class Warfare",
+        "description": "Welcome to Class Warfare, a free-for-all fighting game where you battle using different morphs called classes. Each class uses Roblox gear from the catalog.",
+        "image": "/src/img/projects/cwf.webp",
+        "link": "https://www.roblox.com/games/15506551128/Class-Warfare",
+        "created": "2023-11-30",
+        "status": "Discontinued",
+        "tags": [
+            "Roblox",
+            "Luau"
+        ]
+    },
+
 
     {
         "title": "Teapot Tumble",
@@ -79,32 +92,6 @@
     },
 
     {
-        "title": "Class Warfare",
-        "description": "Welcome to Class Warfare, a free-for-all fighting game where you battle using different morphs called classes. Each class uses Roblox gear from the catalog.",
-        "image": "/src/img/projects/cwf.webp",
-        "link": "https://www.roblox.com/games/15506551128/Class-Warfare",
-        "created": "2023-11-30",
-        "status": "Discontinued",
-        "tags": [
-            "Roblox",
-            "Luau"
-        ]
-    },
-
-    {
-        "title": "Gearbearers",
-        "description": "My newest project and a successor to <a href=\"https://www.roblox.com/games/15506551128/Class-Warfare\">Class Warfare</a>. It is currently private and I do not wish to reveal too much about it yet.",
-        "image": "/src/img/projects/gbs.webp",
-        "link": "https://www.roblox.com/games/140224794047871/Gearbearers",
-        "created": "2026-04-30",
-        "status": "On Hold",
-        "tags": [
-            "Roblox",
-            "Luau"
-        ]
-    },
-
-    {
         "title": "Slime TD",
         "description": "A tower defense game where you defend your base against waves of slimes using turrets. Development of this project never got very far, since it was my first ever Love2D project. It was abandoned after I came up with the idea for <a href=\"https://github.com/mellowestmel/Slime-TD/\">Merge Boxes! 2D</a>.",
         "image": "/src/img/projects/sltd.webp",
@@ -114,6 +101,20 @@
         "tags": [
             "Love2D",
             "Lua"
+        ]
+    },
+
+    {
+        "title": "mellowestmel.com",
+        "description": "A place to check out my projects, socials, and whatever I'm working on.",
+        "image": "/src/img/web/embed.webp",
+        "link": "https://github.com/MellowestMel/mellowestmel.github.io",
+        "created": "2025-02-11",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Website"
         ]
     }
 ]
