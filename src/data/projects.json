@@ -14,11 +14,11 @@
 
     {
         "title": "Merge Boxes! 2D",
-        "description": "A re-creation of my old Roblox game \"<a href=\"https://www.roblox.com/games/15795590655/Merge-Boxes\">Merge Boxes!</a>\". It is now an incremental game rather than just a merge game, and it is also made in Love2D! The game is not finished yet, but I'd say it's pretty close!",
+        "description": "A re-creation of my old Roblox game \"<a href=\"https://www.roblox.com/games/15795590655/Merge-Boxes\">Merge Boxes!</a>\". It is now an incremental game rather than just a merge game, and it is also made in Love2D!",
         "image": "/src/img/projects/mb2d.webp",
         "link": "https://github.com/MellowestMel/Merge-Boxes-2D",
         "created": "2025-12-13",
-        "status": "Indev",
+        "status": "In development",
         "tags": [
             "Love2D",
             "Lua"
@@ -44,7 +44,7 @@
         "image": "/src/img/projects/gbs.webp",
         "link": "https://www.roblox.com/games/140224794047871/Gearbearers",
         "created": "2026-04-30",
-        "status": "On Hold",
+        "status": "On hold",
         "tags": [
             "Roblox",
             "Luau"
@@ -110,11 +110,27 @@
         "image": "/src/img/web/embed.webp",
         "link": "https://github.com/MellowestMel/mellowestmel.github.io",
         "created": "2025-02-11",
+        "status": "Active",
         "tags": [
             "HTML",
             "CSS",
             "JavaScript",
             "Website"
+        ]
+    },
+
+    {
+        "title": "mellowest-rice",
+        "description": "A yellow-and-black themed CachyOS desktop configuration using Hyprland, inspired this very website! Includes custom configurations for my window manager, status bar, terminal, and other desktop utilities.",
+        "image": "/src/img/projects/rice.webp",
+        "link": "https://github.com/mellowestmel/mellowest-rice",
+        "created": "2026-09-26",
+        "status": "Active",
+        "tags": [
+            "Linux",
+            "CachyOS",
+            "Hyprland",
+            "Configuration"
         ]
     }
 ]
