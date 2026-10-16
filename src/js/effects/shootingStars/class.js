@@ -10,8 +10,8 @@ export class ShootingStar {
 
     reset() {
         this.x = Math.random() * -30;
-        this.y = Math.random() * this.spawnBounds.height; 
-        
+        this.y = Math.random() * (this.spawnBounds.height * 1.5) - (this.spawnBounds.height * 0.5);
+
         this.trailLength = Math.random() * 80;
         this.speed = Math.random() * 5 + 2;
         this.opacity = Math.random() * 0.5 + 0.5;
