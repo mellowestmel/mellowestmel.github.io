@@ -7,6 +7,7 @@ export function createCanvasController(canvasElement) {
     }
 
     resizeToWindow();
-
+    
+    window.addEventListener("resize", resizeToWindow);
     return { canvasElement, context, resizeToWindow };
 }
