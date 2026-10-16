@@ -6,8 +6,4 @@ Disallow: /data/
 Disallow: /src/
 Disallow: /js/
 
-Allow: /pages/
-Allow: /img/
-Allow: /web/
-
 Sitemap: https://mellowestmel.com/sitemap.xml
