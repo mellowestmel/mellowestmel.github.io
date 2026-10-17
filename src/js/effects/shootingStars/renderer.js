@@ -1,7 +1,6 @@
 export function renderStar(context, star) {
     const tail = star.getTailPosition();
 
-    // Trail gradient: yellow at the head -> white -> transparent at the tail
     const gradient = context.createLinearGradient(
         star.x,
         star.y,
