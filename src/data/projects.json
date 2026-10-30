@@ -121,7 +121,7 @@
 
     {
         "title": "mellowest-rice",
-        "description": "A yellow-and-black themed CachyOS desktop configuration using Hyprland, inspired this very website! Includes custom configurations for my window manager, status bar, terminal, and other desktop utilities.",
+        "description": "A yellow-and-black themed CachyOS desktop configuration using Hyprland, inspired by this very website! Includes custom configurations for my window manager, status bar, terminal, and other desktop utilities.",
         "image": "/src/img/projects/rice.webp",
         "link": "https://github.com/mellowestmel/mellowest-rice",
         "created": "2026-09-26",
