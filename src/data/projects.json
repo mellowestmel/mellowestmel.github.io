@@ -39,31 +39,17 @@
     },
 
     {
-        "title": "Gearbearers",
-        "description": "My newest project and a successor to <a href=\"https://www.roblox.com/games/15506551128/Class-Warfare\">Class Warfare</a>. It is currently private and I do not wish to reveal too much about it yet.",
-        "image": "/src/img/projects/gbs.webp",
-        "link": "https://www.roblox.com/games/140224794047871/Gearbearers",
-        "created": "2026-04-30",
-        "status": "On hold",
-        "tags": [
-            "Roblox",
-            "Luau"
-        ]
-    },
-
-    {
-        "title": "Class Warfare",
-        "description": "Welcome to Class Warfare, a free-for-all fighting game where you battle using different morphs called classes. Each class uses Roblox gear from the catalog.",
-        "image": "/src/img/projects/cwf.webp",
-        "link": "https://www.roblox.com/games/15506551128/Class-Warfare",
-        "created": "2023-11-30",
+        "title": "Same Day Shipping",
+        "description": "Race against the clock in Same Day Shipping, a fast-paced multiplayer roguelike where every second counts as you rush to deliver packages before time runs out!",
+        "image": "/src/img/projects/sds.webp",
+        "link": "https://www.roblox.com/games/81692255468425/Same-Day-Shipping",
+        "created": "2025-06-25",
         "status": "Discontinued",
         "tags": [
             "Roblox",
             "Luau"
         ]
     },
-
 
     {
         "title": "Teapot Tumble",
@@ -79,12 +65,12 @@
     },
 
     {
-        "title": "Same Day Shipping",
-        "description": "Race against the clock in Same Day Shipping, a fast-paced multiplayer roguelike where every second counts as you rush to deliver packages before time runs out!",
-        "image": "/src/img/projects/sds.webp",
-        "link": "https://www.roblox.com/games/81692255468425/Same-Day-Shipping",
-        "created": "2025-06-25",
-        "status": "Discontinued",
+        "title": "Gearbearers",
+        "description": "My newest project and a successor to <a href=\"https://www.roblox.com/games/15506551128/Class-Warfare\">Class Warfare</a>. It is currently private and I do not wish to reveal too much about it yet.",
+        "image": "/src/img/projects/gbs.webp",
+        "link": "https://www.roblox.com/games/140224794047871/Gearbearers",
+        "created": "2026-04-30",
+        "status": "On hold",
         "tags": [
             "Roblox",
             "Luau"
