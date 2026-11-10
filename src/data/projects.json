@@ -91,6 +91,19 @@
     },
 
     {
+        "title": "minesweeper-rust",
+        "description": "My first ever Rust (and Raylib) project. Updates only whenever I feel like it.",
+        "image": "/src/img/projects/msr.webp",
+        "link": "https://github.com/mellowestmel/minesweeper-rust",
+        "created": "2026-11-09",
+        "status": "Active",
+        "tags": [
+            "Rust",
+            "Raylib"
+        ]
+    },
+
+    {
         "title": "mellowestmel.com",
         "description": "A place to check out my projects, socials, and whatever I'm working on.",
         "image": "/src/img/web/embed.webp",
